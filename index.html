@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princípios da Qualidade de Software</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Navigation Header -->
+        <header class="presentation-header">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="slide-counter">
+                <span id="current-slide">1</span> / <span id="total-slides">22</span>
+            </div>
+        </header>
+
+        <!-- Slides Container -->
+        <main class="slides-container">
+            <!-- Slide 1: Título -->
+            <section class="slide active" data-slide="1">
+                <div class="slide-content">
+                    <h1 class="slide-title">Princípios da Qualidade de Software</h1>
+                    <h2 class="slide-subtitle">Fundamentação Teórica e Aplicações Práticas</h2>
+                    <div class="slide-info">
+                        <p>Curso: Engenharia de Software</p>
+                        <p>Disciplina: Qualidade de Software</p>
+                        <p>Data: 11 de Junho de 2025</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2: Objetivos -->
+            <section class="slide" data-slide="2">
+                <div class="slide-content">
+                    <h2 class="slide-title">Objetivos de Aprendizagem</h2>
+                    <div class="objectives-list">
+                        <div class="objective-item">
+                            <h3>Compreender</h3>
+                            <p>Os fundamentos da qualidade de software segundo as normas ISO/IEC</p>
+                        </div>
+                        <div class="objective-item">
+                            <h3>Identificar</h3>
+                            <p>As oito características de qualidade definidas na ISO/IEC 25010</p>
+                        </div>
+                        <div class="objective-item">
+                            <h3>Aplicar</h3>
+                            <p>Métricas e ferramentas para avaliação da qualidade de software</p>
+                        </div>
+                        <div class="objective-item">
+                            <h3>Integrar</h3>
+                            <p>Práticas de qualidade no ciclo de desenvolvimento de software</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: Fundamentação ISO -->
+            <section class="slide" data-slide="3">
+                <div class="slide-content">
+                    <h2 class="slide-title">Fundamentação Teórica</h2>
+                    <div class="iso-standard">
+                        <h3>ISO/IEC 25010:2011</h3>
+                        <p class="standard-description">Define oito características de qualidade para produtos de software</p>
+                        <div class="standard-benefits">
+                            <h4>Benefícios da Norma:</h4>
+                            <ul>
+                                <li>Padronização internacional</li>
+                                <li>Critérios objetivos de avaliação</li>
+                                <li>Base para especificação de requisitos</li>
+                                <li>Melhoria contínua de processos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 4: Oito Características -->
+            <section class="slide" data-slide="4">
+                <div class="slide-content">
+                    <h2 class="slide-title">Oito Características de Qualidade</h2>
+                    <div class="characteristics-grid">
+                        <div class="characteristic-card">
+                            <h3>Adequação Funcional</h3>
+                            <p>Functional Suitability</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <h3>Eficiência de Desempenho</h3>
+                            <p>Performance Efficiency</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <h3>Compatibilidade</h3>
+                            <p>Compatibility</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <h3>Usabilidade</h3>
+                            <p>Usability</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <h3>Confiabilidade</h3>
+                            <p>Reliability</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <h3>Segurança</h3>
+                            <p>Security</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <h3>Manutenibilidade</h3>
+                            <p>Maintainability</p>
+                        </div>
+                        <div class="characteristic-card">
+                            <h3>Portabilidade</h3>
+                            <p>Portability</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 5: Adequação Funcional -->
+            <section class="slide" data-slide="5">
+                <div class="slide-content">
+                    <h2 class="slide-title">Adequação Funcional</h2>
+                    <div class="characteristic-detail">
+                        <p class="definition">Grau em que um produto ou sistema fornece funções que atendem às necessidades declaradas e implícitas quando usado sob condições especificadas.</p>
+                        <div class="subcharacteristics">
+                            <h3>Subcaracterísticas:</h3>
+                            <div class="subchar-list">
+                                <div class="subchar-item">
+                                    <h4>Completude Funcional</h4>
+                                    <p>Grau em que o conjunto de funções cobre todas as tarefas e objetivos do usuário especificados</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Correção Funcional</h4>
+                                    <p>Grau em que um produto ou sistema fornece os resultados corretos com o grau de precisão necessário</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Adequação Funcional</h4>
+                                    <p>Grau em que as funções facilitam a realização de tarefas e objetivos especificados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6: Eficiência de Desempenho -->
+            <section class="slide" data-slide="6">
+                <div class="slide-content">
+                    <h2 class="slide-title">Eficiência de Desempenho</h2>
+                    <div class="characteristic-detail">
+                        <p class="definition">Desempenho relativo à quantidade de recursos utilizados sob condições estabelecidas.</p>
+                        <div class="subcharacteristics">
+                            <h3>Subcaracterísticas:</h3>
+                            <div class="subchar-list">
+                                <div class="subchar-item">
+                                    <h4>Comportamento Temporal</h4>
+                                    <p>Grau em que os tempos de resposta e processamento atendem aos requisitos</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Utilização de Recursos</h4>
+                                    <p>Grau em que as quantidades e tipos de recursos utilizados atendem aos requisitos</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Capacidade</h4>
+                                    <p>Grau em que os limites máximos de um parâmetro do produto atendem aos requisitos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 7: Compatibilidade -->
+            <section class="slide" data-slide="7">
+                <div class="slide-content">
+                    <h2 class="slide-title">Compatibilidade</h2>
+                    <div class="characteristic-detail">
+                        <p class="definition">Grau em que um produto, sistema ou componente pode trocar informações com outros produtos, sistemas ou componentes e/ou executar suas funções requeridas enquanto compartilha o mesmo ambiente de hardware ou software.</p>
+                        <div class="subcharacteristics">
+                            <h3>Subcaracterísticas:</h3>
+                            <div class="subchar-list">
+                                <div class="subchar-item">
+                                    <h4>Coexistência</h4>
+                                    <p>Grau em que um produto pode executar suas funções requeridas eficientemente enquanto compartilha um ambiente e recursos comuns com outros produtos</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Interoperabilidade</h4>
+                                    <p>Grau em que dois ou mais sistemas, produtos ou componentes podem trocar informações e usar as informações que foram trocadas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8: Usabilidade -->
+            <section class="slide" data-slide="8">
+                <div class="slide-content">
+                    <h2 class="slide-title">Usabilidade</h2>
+                    <div class="characteristic-detail">
+                        <p class="definition">Grau em que um produto ou sistema pode ser usado por usuários específicos para atingir objetivos específicos com eficácia, eficiência e satisfação em um contexto específico de uso.</p>
+                        <div class="subcharacteristics">
+                            <h3>Subcaracterísticas:</h3>
+                            <div class="subchar-list">
+                                <div class="subchar-item">
+                                    <h4>Reconhecimento de Adequação</h4>
+                                    <p>Grau em que usuários podem reconhecer se um produto ou sistema é apropriado para suas necessidades</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Capacidade de Aprendizagem</h4>
+                                    <p>Grau em que um produto ou sistema pode ser usado por usuários específicos para atingir objetivos específicos de aprendizagem</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Operabilidade</h4>
+                                    <p>Grau em que um produto ou sistema tem atributos que facilitam sua operação e controle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 9: Confiabilidade -->
+            <section class="slide" data-slide="9">
+                <div class="slide-content">
+                    <h2 class="slide-title">Confiabilidade</h2>
+                    <div class="characteristic-detail">
+                        <p class="definition">Grau em que um sistema, produto ou componente executa funções especificadas sob condições especificadas por um período de tempo especificado.</p>
+                        <div class="subcharacteristics">
+                            <h3>Subcaracterísticas:</h3>
+                            <div class="subchar-list">
+                                <div class="subchar-item">
+                                    <h4>Maturidade</h4>
+                                    <p>Grau em que um sistema, produto ou componente atende às necessidades de confiabilidade sob operação normal</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Disponibilidade</h4>
+                                    <p>Grau em que um sistema, produto ou componente está operacional e acessível quando necessário para uso</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Tolerância a Falhas</h4>
+                                    <p>Grau em que um sistema, produto ou componente opera conforme pretendido apesar da presença de falhas de hardware ou software</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Recuperabilidade</h4>
+                                    <p>Grau em que, na eventualidade de uma interrupção ou falha, um produto ou sistema pode recuperar os dados diretamente afetados e restabelecer o estado desejado do sistema</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 10: Segurança -->
+            <section class="slide" data-slide="10">
+                <div class="slide-content">
+                    <h2 class="slide-title">Segurança</h2>
+                    <div class="characteristic-detail">
+                        <p class="definition">Grau em que um produto ou sistema protege informações e dados de modo que pessoas ou outros produtos ou sistemas tenham o grau de acesso a dados apropriado aos seus tipos e níveis de autorização.</p>
+                        <div class="subcharacteristics">
+                            <h3>Subcaracterísticas:</h3>
+                            <div class="subchar-list">
+                                <div class="subchar-item">
+                                    <h4>Confidencialidade</h4>
+                                    <p>Grau em que um produto ou sistema garante que os dados sejam acessíveis apenas àqueles autorizados a ter acesso</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Integridade</h4>
+                                    <p>Grau em que um sistema, produto ou componente impede acesso não autorizado ou modificação de programas de computador ou dados</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Não Repúdio</h4>
+                                    <p>Grau em que ações ou eventos podem ser comprovados ter ocorrido, de modo que os eventos ou ações não possam ser repudiados posteriormente</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Responsabilização</h4>
+                                    <p>Grau em que as ações de uma entidade podem ser rastreadas unicamente para a entidade</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Autenticidade</h4>
+                                    <p>Grau em que a identidade de um sujeito ou recurso pode ser provada ser a que é reivindicada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 11: Manutenibilidade -->
+            <section class="slide" data-slide="11">
+                <div class="slide-content">
+                    <h2 class="slide-title">Manutenibilidade</h2>
+                    <div class="characteristic-detail">
+                        <p class="definition">Grau de eficácia e eficiência com que um produto ou sistema pode ser modificado pelos mantenedores previstos.</p>
+                        <div class="subcharacteristics">
+                            <h3>Subcaracterísticas:</h3>
+                            <div class="subchar-list">
+                                <div class="subchar-item">
+                                    <h4>Modularidade</h4>
+                                    <p>Grau em que um sistema ou programa de computador é composto de componentes discretos, de modo que uma mudança em um componente tenha impacto mínimo em outros componentes</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Reusabilidade</h4>
+                                    <p>Grau em que um ativo pode ser usado em mais de um sistema, ou na construção de outros ativos</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Analisabilidade</h4>
+                                    <p>Grau de eficácia e eficiência com que é possível avaliar o impacto em um produto ou sistema de uma mudança pretendida</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Modificabilidade</h4>
+                                    <p>Grau em que um produto ou sistema pode ser efetivamente e eficientemente modificado sem introduzir defeitos ou degradar a qualidade existente do produto</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Testabilidade</h4>
+                                    <p>Grau de eficácia e eficiência com que critérios de teste podem ser estabelecidos para um sistema, produto ou componente e testes podem ser executados para determinar se esses critérios foram atendidos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 12: Portabilidade -->
+            <section class="slide" data-slide="12">
+                <div class="slide-content">
+                    <h2 class="slide-title">Portabilidade</h2>
+                    <div class="characteristic-detail">
+                        <p class="definition">Grau de eficácia e eficiência com que um sistema, produto ou componente pode ser transferido de um hardware, software ou outro ambiente operacional ou de utilização para outro.</p>
+                        <div class="subcharacteristics">
+                            <h3>Subcaracterísticas:</h3>
+                            <div class="subchar-list">
+                                <div class="subchar-item">
+                                    <h4>Adaptabilidade</h4>
+                                    <p>Grau em que um produto ou sistema pode efetivamente e eficientemente ser adaptado para diferentes ou evoluentes hardware, software ou outros ambientes operacionais ou de uso</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Instalabilidade</h4>
+                                    <p>Grau de eficácia e eficiência com que um produto ou sistema pode ser instalado com sucesso e/ou desinstalado em um ambiente especificado</p>
+                                </div>
+                                <div class="subchar-item">
+                                    <h4>Substituibilidade</h4>
+                                    <p>Grau em que um produto pode substituir outro produto de software especificado para a mesma finalidade no mesmo ambiente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 13: Processos de Garantia -->
+            <section class="slide" data-slide="13">
+                <div class="slide-content">
+                    <h2 class="slide-title">Processos de Garantia de Qualidade</h2>
+                    <div class="processes-content">
+                        <div class="process-item">
+                            <h3>Planejamento da Qualidade</h3>
+                            <p>Definição de objetivos, padrões e critérios de qualidade</p>
+                        </div>
+                        <div class="process-item">
+                            <h3>Controle de Qualidade</h3>
+                            <p>Verificação e validação durante o desenvolvimento</p>
+                        </div>
+                        <div class="process-item">
+                            <h3>Garantia de Qualidade</h3>
+                            <p>Monitoramento de processos e conformidade com padrões</p>
+                        </div>
+                        <div class="process-item">
+                            <h3>Melhoria Contínua</h3>
+                            <p>Análise de métricas e implementação de melhorias</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 14: Métricas de Qualidade -->
+            <section class="slide" data-slide="14">
+                <div class="slide-content">
+                    <h2 class="slide-title">Métricas de Qualidade</h2>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <h3>Densidade de Defeitos</h3>
+                            <p>Número de defeitos por linha de código ou ponto de função</p>
+                            <div class="metric-formula">Defeitos / KLOC</div>
+                        </div>
+                        <div class="metric-card">
+                            <h3>Cobertura de Testes</h3>
+                            <p>Percentual do código exercitado pelos testes</p>
+                            <div class="metric-formula">Linhas Testadas / Total Linhas × 100%</div>
+                        </div>
+                        <div class="metric-card">
+                            <h3>Complexidade Ciclomática</h3>
+                            <p>Medida da complexidade estrutural do código</p>
+                            <div class="metric-formula">V(G) = E - N + 2P</div>
+                        </div>
+                        <div class="metric-card">
+                            <h3>Tempo de Resposta</h3>
+                            <p>Tempo entre solicitação e resposta do sistema</p>
+                            <div class="metric-formula">T = T_fim - T_início</div>
+                        </div>
+                        <div class="metric-card">
+                            <h3>Disponibilidade</h3>
+                            <p>Percentual de tempo que o sistema está operacional</p>
+                            <div class="metric-formula">MTBF / (MTBF + MTTR) × 100%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 15: Ferramentas de Qualidade -->
+            <section class="slide" data-slide="15">
+                <div class="slide-content">
+                    <h2 class="slide-title">Ferramentas de Qualidade</h2>
+                    <div class="tools-content">
+                        <div class="tool-card">
+                            <h3>SonarQube</h3>
+                            <p class="tool-description">Plataforma de análise contínua da qualidade do código</p>
+                            <div class="tool-features">
+                                <h4>Funcionalidades:</h4>
+                                <ul>
+                                    <li>Análise estática</li>
+                                    <li>Detecção de bugs</li>
+                                    <li>Métricas de qualidade</li>
+                                    <li>Integração com CI/CD</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h3>Outras Ferramentas</h3>
+                            <ul class="tools-list">
+                                <li><strong>CheckStyle:</strong> Verificação de padrões de codificação</li>
+                                <li><strong>PMD:</strong> Análise de código fonte</li>
+                                <li><strong>FindBugs/SpotBugs:</strong> Detecção de bugs</li>
+                                <li><strong>ESLint:</strong> Análise de código JavaScript</li>
+                                <li><strong>Selenium:</strong> Testes automatizados de interface</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 16: Metodologias -->
+            <section class="slide" data-slide="16">
+                <div class="slide-content">
+                    <h2 class="slide-title">Metodologias de Qualidade</h2>
+                    <div class="methodologies-grid">
+                        <div class="methodology-card">
+                            <h3>CMMI</h3>
+                            <p>Modelo de maturidade para melhoria de processos</p>
+                            <div class="cmmi-levels">
+                                <div class="level">1. Inicial</div>
+                                <div class="level">2. Gerenciado</div>
+                                <div class="level">3. Definido</div>
+                                <div class="level">4. Quantitativamente Gerenciado</div>
+                                <div class="level">5. Otimizado</div>
+                            </div>
+                        </div>
+                        <div class="methodology-card">
+                            <h3>Six Sigma</h3>
+                            <p>Metodologia para melhoria de processos e redução de defeitos</p>
+                            <div class="six-sigma-phases">
+                                <div class="phase">Define</div>
+                                <div class="phase">Measure</div>
+                                <div class="phase">Analyze</div>
+                                <div class="phase">Improve</div>
+                                <div class="phase">Control</div>
+                            </div>
+                        </div>
+                        <div class="methodology-card">
+                            <h3>TQM</h3>
+                            <p>Gestão da Qualidade Total</p>
+                            <ul>
+                                <li>Foco no cliente</li>
+                                <li>Envolvimento de todos</li>
+                                <li>Melhoria contínua</li>
+                                <li>Decisões baseadas em dados</li>
+                            </ul>
+                        </div>
+                        <div class="methodology-card">
+                            <h3>Agile</h3>
+                            <p>Metodologia ágil com foco em qualidade</p>
+                            <ul>
+                                <li>Entregas incrementais</li>
+                                <li>Feedback contínuo</li>
+                                <li>Testes automatizados</li>
+                                <li>Refatoração</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 17: Clean Code -->
+            <section class="slide" data-slide="17">
+                <div class="slide-content">
+                    <h2 class="slide-title">Clean Code e Boas Práticas</h2>
+                    <div class="clean-code-content">
+                        <div class="principles-section">
+                            <h3>Princípios do Clean Code</h3>
+                            <div class="principles-grid">
+                                <div class="principle-item">
+                                    <h4>Legibilidade</h4>
+                                    <p>Código deve ser fácil de ler e entender</p>
+                                </div>
+                                <div class="principle-item">
+                                    <h4>Simplicidade</h4>
+                                    <p>Soluções simples são preferíveis</p>
+                                </div>
+                                <div class="principle-item">
+                                    <h4>Responsabilidade Única</h4>
+                                    <p>Cada função/classe deve ter uma responsabilidade</p>
+                                </div>
+                                <div class="principle-item">
+                                    <h4>DRY</h4>
+                                    <p>Don't Repeat Yourself - evitar duplicação</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best-practices">
+                            <h3>Boas Práticas</h3>
+                            <ul>
+                                <li>Nomenclatura significativa</li>
+                                <li>Funções pequenas e focadas</li>
+                                <li>Comentários quando necessário</li>
+                                <li>Tratamento adequado de erros</li>
+                                <li>Testes unitários abrangentes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 18: DevOps e Qualidade -->
+            <section class="slide" data-slide="18">
+                <div class="slide-content">
+                    <h2 class="slide-title">DevOps e Qualidade</h2>
+                    <div class="devops-content">
+                        <div class="devops-benefits">
+                            <h3>Benefícios do DevOps para Qualidade</h3>
+                            <div class="benefits-grid">
+                                <div class="benefit-item">
+                                    <h4>Integração Contínua</h4>
+                                    <p>Detecção precoce de problemas</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <h4>Entrega Contínua</h4>
+                                    <p>Releases frequentes e confiáveis</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <h4>Monitoramento</h4>
+                                    <p>Visibilidade em tempo real</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <h4>Automação</h4>
+                                    <p>Redução de erros manuais</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="devops-practices">
+                            <h3>Práticas DevOps</h3>
+                            <ul>
+                                <li>Testes automatizados em pipeline</li>
+                                <li>Infraestrutura como código</li>
+                                <li>Monitoramento e logging</li>
+                                <li>Deployment automatizado</li>
+                                <li>Feedback rápido</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 19: Ciclo de Vida -->
+            <section class="slide" data-slide="19">
+                <div class="slide-content">
+                    <h2 class="slide-title">Ciclo de Vida e Qualidade</h2>
+                    <div class="lifecycle-content">
+                        <div class="phase-quality">
+                            <h3>Qualidade em Cada Fase</h3>
+                            <div class="phases-grid">
+                                <div class="phase-item">
+                                    <h4>Requisitos</h4>
+                                    <ul>
+                                        <li>Especificação clara</li>
+                                        <li>Critérios de aceitação</li>
+                                        <li>Rastreabilidade</li>
+                                    </ul>
+                                </div>
+                                <div class="phase-item">
+                                    <h4>Design</h4>
+                                    <ul>
+                                        <li>Padrões arquiteturais</li>
+                                        <li>Revisões de design</li>
+                                        <li>Modelagem</li>
+                                    </ul>
+                                </div>
+                                <div class="phase-item">
+                                    <h4>Implementação</h4>
+                                    <ul>
+                                        <li>Padrões de codificação</li>
+                                        <li>Revisão de código</li>
+                                        <li>Testes unitários</li>
+                                    </ul>
+                                </div>
+                                <div class="phase-item">
+                                    <h4>Testes</h4>
+                                    <ul>
+                                        <li>Estratégia de testes</li>
+                                        <li>Automação</li>
+                                        <li>Cobertura adequada</li>
+                                    </ul>
+                                </div>
+                                <div class="phase-item">
+                                    <h4>Manutenção</h4>
+                                    <ul>
+                                        <li>Monitoramento</li>
+                                        <li>Refatoração</li>
+                                        <li>Evolução controlada</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 20: Atividades Práticas -->
+            <section class="slide" data-slide="20">
+                <div class="slide-content">
+                    <h2 class="slide-title">Atividades Práticas</h2>
+                    <div class="activities-content">
+                        <div class="activity-item">
+                            <h3>Exercício 1: Análise de Código</h3>
+                            <p>Avalie um trecho de código usando as características de qualidade da ISO 25010</p>
+                            <div class="activity-details">
+                                <strong>Critérios:</strong> Manutenibilidade, Legibilidade, Eficiência
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <h3>Exercício 2: Métricas de Qualidade</h3>
+                            <p>Calcule métricas de qualidade para um projeto de software</p>
+                            <div class="activity-details">
+                                <strong>Métricas:</strong> Complexidade Ciclomática, Cobertura de Testes, Densidade de Defeitos
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <h3>Exercício 3: Plano de Qualidade</h3>
+                            <p>Elabore um plano de garantia de qualidade para um projeto</p>
+                            <div class="activity-details">
+                                <strong>Componentes:</strong> Objetivos, Processos, Ferramentas, Métricas
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <h3>Projeto Final</h3>
+                            <p>Implementação de um sistema de qualidade completo</p>
+                            <div class="activity-details">
+                                <strong>Entregáveis:</strong> Documentação, Implementação, Relatório de Qualidade
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 21: Conclusões -->
+            <section class="slide" data-slide="21">
+                <div class="slide-content">
+                    <h2 class="slide-title">Conclusões</h2>
+                    <div class="conclusions-content">
+                        <div class="conclusion-item">
+                            <h3>Importância da Qualidade</h3>
+                            <p>A qualidade de software é fundamental para o sucesso de produtos e organizações de tecnologia</p>
+                        </div>
+                        <div class="conclusion-item">
+                            <h3>Abordagem Sistemática</h3>
+                            <p>A ISO/IEC 25010 fornece uma base sólida para avaliação e melhoria da qualidade</p>
+                        </div>
+                        <div class="conclusion-item">
+                            <h3>Integração de Práticas</h3>
+                            <p>DevOps, Clean Code e metodologias ágeis complementam os princípios de qualidade</p>
+                        </div>
+                        <div class="conclusion-item">
+                            <h3>Melhoria Contínua</h3>
+                            <p>A qualidade deve ser um processo contínuo, não um evento pontual</p>
+                        </div>
+                        <div class="key-takeaways">
+                            <h3>Principais Takeaways</h3>
+                            <ul>
+                                <li>Qualidade deve ser considerada desde o início do projeto</li>
+                                <li>Métricas e ferramentas são essenciais para objetividade</li>
+                                <li>Toda a equipe deve estar envolvida na garantia de qualidade</li>
+                                <li>Investimento em qualidade reduz custos a longo prazo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 22: Referências -->
+            <section class="slide" data-slide="22">
+                <div class="slide-content">
+                    <h2 class="slide-title">Referências</h2>
+                    <div class="references-content">
+                        <div class="references-list">
+                            <div class="reference-item">
+                                <strong>ISO/IEC 25010:2011</strong> - Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and software quality models
+                            </div>
+                            <div class="reference-item">
+                                <strong>Sommerville, I.</strong> (2016). Software Engineering. 10th Edition. Pearson.
+                            </div>
+                            <div class="reference-item">
+                                <strong>Pressman, R. S.</strong> (2014). Software Engineering: A Practitioner's Approach. 8th Edition. McGraw-Hill.
+                            </div>
+                            <div class="reference-item">
+                                <strong>Martin, R. C.</strong> (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
+                            </div>
+                            <div class="reference-item">
+                                <strong>CMMI Product Team</strong> (2010). CMMI for Development, Version 1.3. Software Engineering Institute.
+                            </div>
+                            <div class="reference-item">
+                                <strong>SonarSource</strong> (2024). SonarQube Documentation. https://docs.sonarqube.org/
+                            </div>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Contato</h3>
+                            <p>Para dúvidas sobre este material, entre em contato através dos canais oficiais da disciplina.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Navigation Controls -->
+        <nav class="presentation-nav">
+            <button id="prev-btn" class="nav-btn" disabled>
+                <span>← Anterior</span>
+            </button>
+            <div class="slide-list-container">
+                <button id="slide-list-btn" class="nav-btn">
+                    <span>Lista de Slides</span>
+                </button>
+                <div id="slide-list" class="slide-list hidden">
+                    <!-- Slides list will be populated by JavaScript -->
+                </div>
+            </div>
+            <button id="next-btn" class="nav-btn">
+                <span>Próximo →</span>
+            </button>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
