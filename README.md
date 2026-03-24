@@ -1,4 +1,4 @@
-# Guia de Testes e Cobertura
+## Guia de Testes e Cobertura
 
 Este documento descreve, de forma objetiva, como:
 - executar os testes automatizados do projeto;
