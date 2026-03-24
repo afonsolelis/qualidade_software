@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: ["**"]
+    branches: ["** #dispara em qualquer commit feito em qualquer branch"]
   pull_request:
     branches: ["**"]
 
