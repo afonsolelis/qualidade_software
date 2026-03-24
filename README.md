@@ -11,7 +11,7 @@ Este é um projeto educacional em Java usando Spring Boot e Maven para ensinar c
 
 ## Tecnologias Utilizadas
 
-- Java 17
+- Java 17 
 - Spring Boot 3.2.0
 - Maven
 - Spring Data MongoDB
@@ -27,7 +27,6 @@ mongodb://mongo:XdnCdkmKwzJiKHiryTDzdgRGOxzNQYtA@crossover.proxy.rlwy.net:24258
 ```
 
 ## Começando
-
 ### Pré-requisitos
 
 - Java 17 ou superior
