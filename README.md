@@ -194,3 +194,5 @@ Service --> Controller: lista
 Controller --> Teste: 200 OK
 @enduml
 ```
+
+# Testando Pipeline CI
