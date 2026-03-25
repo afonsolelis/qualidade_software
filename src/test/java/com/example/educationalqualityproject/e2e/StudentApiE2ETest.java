@@ -54,7 +54,7 @@ class StudentApiE2ETest {
     @Test
     @DisplayName("E2E API Student - GET /api/students retorna lista")
     void shouldReturnStudentsList() throws Exception {
-        Student student = new Student("Joao", "joao@escola.edu", "R001");
+        Student student = new Student("Pedro", "pedro@escola.edu", "R001");
         student.setId("s1");
         when(studentRepository.findAll()).thenReturn(List.of(student));
 
